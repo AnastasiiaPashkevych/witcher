@@ -83,8 +83,7 @@ header {
 }
 
 .logo {
-    padding-top: 5%;
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -117,3 +116,45 @@ header {
     margin-bottom: 25px;
 }
 /*About section styles end*/
+
+/*Video section styles start*/
+.video {
+    background-image: url(images/video-bg.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: left;
+}
+
+.video__text {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 72px;
+    line-height: 84px;
+    padding-top: 20%;
+    margin-bottom: 40px;
+}
+
+.video__text span {
+    display: block;
+    padding-left: 100px;
+}
+
+.video__btn {
+    padding-left: 112px;
+    position: relative;
+    margin-left: 10%;
+}
+
+.video__btn::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 0;
+    top: -40px;
+    background-image: url(images/youtube-btn.svg);
+    background-size: contain;
+}
+/* Video section styles end*/
