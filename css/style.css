@@ -88,8 +88,9 @@ ul {
 }
 
 .logo {
-  max-width: 600px;
+  max-width: 900px;
   margin: 0 auto;
+  padding-top: 17vh;
 }
 
 .logo__img {
@@ -138,7 +139,7 @@ ul {
   font-weight: 300;
   font-size: 72px;
   line-height: 84px;
-  padding-top: 20%;
+  padding-top: 35vh;
   margin-bottom: 40px;
 }
 
@@ -205,6 +206,10 @@ ul {
   left: 0;
   top: -75px;
   z-index: -1;
+}
+
+.seasons__item:nth-child(n+10)::before {
+  content: counter(number);
 }
 
 .seasons__item:hover::after {
@@ -310,7 +315,7 @@ ul {
 }
 
 .page-logo__img {
- width: 300px;
+  width: 300px;
 }
 
 .season-info {
@@ -344,5 +349,42 @@ ul {
   text-align: left;
 }
 
-
 /* End season-1 */
+
+
+/* Start media */
+@media (max-width: 1366px) {
+  .logo__img {
+    width: 80%;
+  }
+  .menu__list-link {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about__inner {
+    display: block;
+  }
+  .section-page {
+    padding: 50px 0;
+  }
+  .title {
+    margin-bottom: 50px;
+  }
+  body {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+}
+
+@media (max-width: 640px) {
+  .menu__list {
+    display: none;
+  }
+
+}
+
+/* End media */
